@@ -1,0 +1,69 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+img {
+  width: 20em;
+  height: 30em;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+
+
+.img-container {
+  transition: all 0.5s;
+}
+
+.img-container:hover {
+  scale: 1.1;
+}
+
+.img-container:hover img{
+    filter: grayscale(0%);
+}
+
+.img-container:hover .desciption {
+  position: absolute;
+  opacity: 100;
+  transform: translateY(-100%);
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 0, 0, 0),
+    rgb(138, 142, 149)
+  );
+}
+
+p {
+  margin: 0;
+  padding: 1em;
+  background-color: #152234;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 0.3em;
+  color: #d3ae4f;
+}
+
+.desciption {
+  text-align: center;
+  color: #FFF;
+  opacity: 0;
+  position: absolute;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  letter-spacing: 0.15em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: all 0.3s cubic-bezier(0,.54,.1,.99);
+  z-index: 0;
+}
+
