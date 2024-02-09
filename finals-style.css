@@ -25,6 +25,7 @@ img {
 
 .img-container:hover {
   scale: 1.1;
+
 }
 
 .img-container:hover img{
